@@ -34,17 +34,17 @@ Example usage:
 
 Note the sign goes at the end, as the script follows POSIX standards and
 a hyphen (-) indicates a command option. Alternatively, again based on
-POSIX standards, one can use '--' to stop processing options nd the signs
+POSIX standards, one can use '--' to stop processing options and the signs
 will be interpreted properly.
 
     $ python -m script area -- 142.5 143 -11.5 -11
 
 ### Finding locations containing a point
 
-Given a coordinate file and a coordinated in WGS 84 coordinates, list
+Given a coordinate file and a coordinated in WGS 84 coordinates, it lists
 all the entries in the file that contain the given point. For example
 
     $ python -m script find-rows AU_proj_coords.csv -- 142.6 -11.2
 
-The first parameter is the path to the file and the next are longitude
-and latitude.
+The first parameter is the path to the file and the next are the longitude
+and latitude of the point of interest.

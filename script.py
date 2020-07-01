@@ -72,9 +72,14 @@ def find_rows(file, long, lat):
 
 
 if __name__ == "__main__":
+
+    # this is standard code that I like to use in scripts to always report elapsed time
+
     click.echo("RUNNING python " + " ".join(sys.argv), err=True)
+
     def wtime(t0):
         secs = (datetime.now() - t0)
         click.echo("[walltime %s]" % str(secs), err=True)
     atexit.register(wtime, datetime.now())
+
     main()
